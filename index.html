@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCLINK</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.jpg" alt="Logo">
+        </a>
+        </div>
+<!--Translator-->
+<div  id="google_translate_element"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+              <li><a href="#home" class="menu-link" onclick="smoothScroll('#home')">Home</a></li>
+        <li><a href="#products" class="menu-link" onclick="smoothScroll('#products')">Products</a></li>
+        <li><a href="#contact" class="menu-link" onclick="smoothScroll('#contact')">Contact</a></li>
+        <li>
+          <a href="#" class="cart" id="view-cart">
+              <i class="fas fa-shopping-cart cart-icon"></i><span id="cart-count">0</span>
+     </a></li>
+               
+            </ul>
+        </nav>
+
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com" target="_blank" title="x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+2348138372897" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <section id="welcome" class="welcome-section">
+        <h1 class="welcome">CC LINK BUILDING MATERIALS SERVICE LTD</h1>
+        <p class="intro">At <span style="font-weight: bold;">CC LINK BUILDING MATERIALS SERVICE LTD,</span> we take pride in offering a wide range of high-quality doors to suit any style or purpose. From elegant wooden doors that bring warmth and character to your space, to durable steel doors designed for maximum security, and sleek glass doors that add a modern touch, we have something for everyone. We also provide custom-made doors tailored to your exact specifications, ensuring your unique needs are met with precision and care.
+    
+    In addition to our exceptional door collection, we supply a comprehensive selection of building materials to support all your construction and renovation projects. Whether you're building a new home or upgrading an existing property, we are your one-stop solution for quality products and outstanding service.
+    
+    Let us help you create spaces that inspire. Explore our offerings today and experience the difference of working with a trusted industry leader.</p>
+        <div class="btn-1">
+          <button class="View-Product-btn">  View Product  <i class="fas fa-shopping-cart cart-icon"></i> </button>
+        </div>
+      </section>
+      <section class="det">
+        <div class="locate">
+        <h2 class="header-det">Address</h2>
+          <p>Afro Plaza,Opposite Dei Dei Building Matterials Market,FCT-Abuja</p>
+        </div>
+          <div class="mail">
+        <h2 class="header-det">Email</h2>
+          <p>CCLINK@gmail.com</p>
+        </div>
+          <div class="phone">
+        <h2 class="header-det">Tel</h2>
+          <p>+234-813-837-2897</p>
+          <p>+234-808-782-0713</p>
+        </div>
+      </section>
+      <section class="catalog-download">
+        <h2 class="cat-header"> Shape Tomorrow with Every Structure You Build!</h2>
+        <button class="cat-btn">DOWNLOAD OUR CATALOG  >></button>
+        </section>
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures/Door0.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>American Pannel Door</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="0" data-name="American Pannel Door" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+      
+        
+         <!--Here is the cart Modal-->
+<div class="cart-modal hidden" id="cart-modal">
+  <div class="cart-header">
+      <h2>Cart</h2>
+      <button class="close-cart" id="close-cart">X</button>
+  </div>
+  <ul id="cart-items"></ul>
+  <div class="cart-footer">
+      <a href="https://wa.me/+2348138372897" id="order-button" class="order-button">Order via WhatsApp <i class="fab fa-whatsapp"></i></a>
+      <button id="reset-cart" class="reset-button">Reset Cart</button>
+<a href="index.html" class="order-button">Proceed to Checkout</a>
+</div>
+</div>
+
+<!--cart Modal code ends here -->
+<div class="main-product">
+  <div class="img-product">
+    <img src="pictures/Door1.jpg" alt="Door" >
+    <div class="quick-view-icon">
+      <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+    </div>
+  </div>
+  <div class="product-title">
+    <p>Isreali Berlin Door </p>
+    </div>
+  <div class="product-des">
+    <p>₦0.00</p>
+    
+    <button class="cart-btn" data-id="1" data-name="Isreali Berlin" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+ </div> 
+</div>
+
+        
+
+
+
+<div class="main-product">
+  <div class="img-product">
+    <img src="pictures/Door2.jpg" alt="Door" >
+    <div class="quick-view-icon">
+      <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+    </div>
+  </div>
+  <div class="product-title">
+    <p>Wooden Door</p>
+    </div>
+  <div class="product-des">
+    <p>₦0.00</p>
+    
+    <button class="cart-btn" data-id="2" data-name="Wooden Door" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+ </div> 
+</div>
+        
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures/Door3.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Berlin Door 0.9 X 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="3" data-name="Isreali Berlin Door 0.9 X 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures/Door4.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>German Copper Door 0.9 X 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="4" data-name="German Copper  Door 0.9 X 2.1 " data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door5.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>German Copper Door 1.2 X 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="5" data-name="German Copper Door 1.2 X 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door6.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Madrid Security Door </p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="6" data-name="Isreali Madrid Security Door" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door7.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Madrid Security Door </p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="7" data-name="Isreali Madrid Security Door " data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door8.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Nin Light Wooden Door</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="8" data-name="Nin Light Wooden Door" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door9.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Decorative Door 1.2 x 2.4</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="9" data-name="Decorative Door 1.2 x 2.4" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door10.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Decorative Door 1.8 x 2.4</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="10" data-name="Decorative Door 1.8 x 2.4" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door11.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Johu Door 0.9 X 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="11" data-name="Johu Door 0.9 X 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door12.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Waxing Time Door 0.9 x 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="12" data-name="Waxing Time Door 0.9 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door13.jpg" alt="Door" >
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>German Cast Door 1.2 x 2.1</p>
+            </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            
+            <button class="cart-btn" data-id="13" data-name="German Cast Door 1.2 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+         </div> 
+        </div>
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door14.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>French Door 1.2 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="14" data-name="French Door 1.2 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+        
+        <!-- Modal for Full Image View -->
+        <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImage" alt="Full Image">
+        </div>
+
+        
+
+<div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door15.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Milan Door 0.9 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="15" data-name="Isreali Milan Door 0.9 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door16.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>American Pannel Door 0.9 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="16" data-name="American Pannel Door 0.9 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door17.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Berlin Door 0.9 x 2.1  </p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="17" data-name="Isreali Berlin DOor 0.9 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door18.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Milan Door 106 x 2.1 </p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="18" data-name="Isreali Milan Door 106 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door19.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Milan Door 0.9 x 2.4</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="19" data-name="Isreali Milan Door 0.9 x 2.4" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door20.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Turkey Wooden Door 900 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="20" data-name="Turkey Wooden Door 900 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door21.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Turkey Wooden Door 900 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="21" data-name="Turkey Wooden Door 900 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures\Door22.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Isreali Madrid Door 0.9 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="22" data-name="Isreali Madrid Door 0.9 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="main-product">
+          <div class="img-product">
+            <img src="pictures/Door23.jpg" alt="Door">
+            <div class="quick-view-icon">
+              <span><i class="fas fa-search cart-zoom-icon"></i>Quick View</span>
+            </div>
+          </div>
+          <div class="product-title">
+            <p>Berlin Door 900 x 2.1</p>
+          </div>
+          <div class="product-des">
+            <p>₦0.00</p>
+            <button class="cart-btn" data-id="23" data-name="Berlin Door 900 x 2.1" data-price="0.00">Add to Cart <i class="fas fa-shopping-cart cart-icon"></i></button>
+          </div>
+        </div>
+
+        <footer class="footer1">
+          <nav class="pagination">
+            <a href="index.html">1</a>
+            <a href="page2.html" class="active">2</a>
+            <a href="page3.html">3</a>
+            <a href="page4.html">4</a>
+            <a href="page5.html">5</a>
+          </nav>
+        </footer>
+<!--Special Feature-->
+<div class="features">
+  <div class="feature">
+    <i class="fas fa-shipping-fast"></i>
+    <div class="text">
+      <h3>Express Delivery</h3>
+      <p>Get your orders delivered fast and on time.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fas fa-award"></i>
+    <div class="text">
+      <h3>Premium Quality</h3>
+      <p>We provide top-notch quality products always.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fas fa-headset"></i>
+    <div class="text">
+      <h3>24/7 Customer Support</h3>
+      <p>We are here to assist you anytime, anywhere.</p>
+    </div>
+  </div>
+</div>
+<!--Picture Grid-->
+<div class="gallery-container">
+  <div class="gallery">
+      <div class="item">
+          <img src="pictures\Door40.jpg" alt="Door">
+          <a href="page2.html" class="caption-button">DOORS</a>
+      </div>
+      <div class="item">
+          <img src="pictures\Jaccuzi1.jpg" alt="Jacuzzi">
+          <a href="page3.html" class="caption-button" >BATHROOMS</a>
+      </div>
+      <div class="item">
+          <img src="pictures\Tiles0.jpg" alt="Tiles">
+          <a href="index.html" class="caption-button">TILES</a>
+      </div>
+  </div>
+</div>
+
+<!--about-->
+
+<div class="row">
+  <div class="column" style="background-color:#444444;">
+    <h4 style="color:white;">ABOUT</h4>
+   <p><i class="fas fa-map-marker-alt"></i>  Afro Plaza,Opposite Dei Dei Building Materials Market,FCT-Abuja</p>
+   <p><i class="fas fa-phone-alt"></i>  +234-813-837-2897|+234-808-782-0713</p>
+  <p><i class="fas fa-envelope"></i>  cclink@gmail.com</p>
+  <p><i class="fas fa-clock"></i>  24/7 Online - Mon to Sat 8AM - 5PM</p>
+  <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter" style="color:#bbb;"></i></a>
+  <a href="https://wa.me/+2348138372897" target="_blank"><i class="fab fa-whatsapp" style="color:#bbb;"></i></a>
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"  style="color:#bbb;"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"style="color:#bbb;"></i></a>
+  </div>
+  <div class="column" style="background-color:#444444;">
+    <h4 style="color:white;">PRODUCT CATEGOREIS</h4>
+    <a href="#" class="product-link">Doors</a>
+    <a href="#" class="product-link">Bathroom</a>
+    <a href="#" class="product-link">Tiles</a>
+  </div>
+  <div class="column" style="background-color:#444444;">
+    <h4 style="color:white;">TOP SALES</h4>    
+    
+    <div class="topsale-section">
+      <div class="product-list">
+          <div class="topsale-card">
+              <img src="pictures\Door40.jpg" alt="Door">
+              <span class="product-name">Isreali Security Doors </span>
+          </div>
+          <div class="topsale-card">
+              <img src="pictures\Jaccuzi1.jpg" alt="Jacuzzi">
+              <span class="product-name">Modern Jaccuzi</span>
+          </div>
+          <div class="topsale-card">
+              <img src="pictures\Door21.jpg" alt="Door">
+              <span class="product-name">Doors</span>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<!--Last footer-->
+  <footer class="footer2">
+    <div class="footer2-container">
+      <p>Copyright © Cclink. All rights reserved</p>
+      <div class="right">
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-stripe"></i>
+        <i class="fab fa-cc-amazon-pay"></i>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>    
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Load cart from local storage
+
+    // Select Elements
+    const addToCartButtons = document.querySelectorAll(".cart-btn");
+    const cartCount = document.getElementById("cart-count");
+    const cartModal = document.getElementById("cart-modal");
+    const viewCartButton = document.getElementById("view-cart");
+    const closeCartButton = document.getElementById("close-cart");
+    const cartItemsList = document.getElementById("cart-items");
+    const resetCartButton = document.getElementById("reset-cart");
+
+    // Ensure elements exist before proceeding
+    if (!cartModal || !viewCartButton || !closeCartButton || !cartItemsList || !resetCartButton) {
+        console.error("One or more elements are missing. Check your HTML structure.");
+        return;
+    }
+
+    console.log("Cart on load:", cart); // Debugging cart state on page load
+
+    // Function to add item to cart
+    function addToCart(id, name, price, image) {
+        id = parseInt(id);
+        price = parseFloat(price);
+
+        if (isNaN(price)) {
+            console.error("Invalid price value:", price);
+            return;
+        }
+
+        const existingItem = cart.find((item) => item.id === id);
+
+        if (existingItem) {
+            existingItem.quantity += 1; // Increase quantity if item exists
+        } else {
+            cart.push({ id, name, price, image, quantity: 1 }); // Add new item
+        }
+
+        saveCart();
+        updateCartCount();
+        renderCartItems();
+    }
+
+    // Function to update cart count
+    function updateCartCount() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = totalItems;
+    }
+
+    // Function to render cart items in the modal
+    function renderCartItems() {
+        cartItemsList.innerHTML = ""; // Clear previous content
+
+        if (cart.length === 0) {
+            cartItemsList.innerHTML = "<p>Your cart is empty.</p>";
+            return;
+        }
+
+        cart.forEach((item) => {
+          if (isNaN(item.price) || item.price < 0) {
+                console.error("Cart item has an invalid price:", item);
+                return;
+            }
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                    <div class="cart-item-details">
+                        <h3>${item.name}</h3>
+                        <p><strong>₦${item.price.toFixed(2)}</strong></p>
+                        <div class="quantity-controls">
+                            <button class="decrease" data-id="${item.id}">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="increase" data-id="${item.id}">+</button>
+                        </div>
+                        <a href="https://wa.me/2348012345678?text=${encodeURIComponent(`Hello, I would like to order ${item.name} (Quantity: ${item.quantity}).`)}" 
+                            class="order-product-button" target="_blank">
+                            Order ${item.name} via WhatsApp <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+            cartItemsList.appendChild(li);
+        });
+
+        console.log("Rendered cart items:", cart); // Debugging
+    }
+
+    // Function to save cart to local storage
+    function saveCart() {
+        localStorage.setItem("cart", JSON.stringify(cart));
+        console.log("Cart saved:", cart); // Debugging saved cart
+    }
+
+    // Reset Cart Function
+    function resetCart() {
+        cart = []; // Empty the cart
+        saveCart();
+        updateCartCount();
+        renderCartItems();
+        console.log("Cart has been reset.");
+    }
+
+    // Attach event listeners for adding items to the cart
+    addToCartButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const id = button.getAttribute("data-id");
+            const name = button.getAttribute("data-name");
+            const price = button.getAttribute("data-price");
+            const imageElement = button.closest(".main-product")?.querySelector("img");
+            const image = imageElement ? imageElement.src : "";
+
+            if (!id || !name || !price || !image) {
+                console.error("Invalid item data:", { id, name, price, image });
+                return;
+            }
+
+            console.log("Adding to cart:", { id, name, price, image }); // Debugging
+            addToCart(id, name, price, image);
+        });
+    });
+
+    // Open Cart Modal
+    viewCartButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        renderCartItems();
+        cartModal.classList.remove("hidden");
+        console.log("Cart modal opened");
+    });
+
+    // Close Cart Modal
+    closeCartButton.addEventListener("click", () => {
+        cartModal.classList.add("hidden");
+        console.log("Cart modal closed");
+    });
+
+    // Reset Cart Button Click Event
+    resetCartButton.addEventListener("click", () => {
+        if (confirm("Are you sure you want to reset the cart?")) {
+            resetCart();
+        }
+    });
+
+    // Handle quantity updates (increase/decrease)
+    cartItemsList.addEventListener("click", (e) => {
+        const id = parseInt(e.target.dataset.id);
+
+        if (e.target.classList.contains("increase")) {
+            const item = cart.find((item) => item.id === id);
+            if (item) item.quantity += 1;
+        } else if (e.target.classList.contains("decrease")) {
+            const item = cart.find((item) => item.id === id);
+            if (item) {
+                if (item.quantity > 1) {
+                    item.quantity -= 1;
+                } else {
+                    cart = cart.filter((item) => item.id !== id);
+                }
+            }
+        }
+
+        saveCart();
+        updateCartCount();
+        renderCartItems();
+    });
+
+    // Delay initialization to ensure localStorage is fully loaded
+    setTimeout(() => {
+        updateCartCount();
+        renderCartItems();
+    }, 100);
+});
+
+  // Get the modal
+  document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".quick-view-icon").forEach(icon => {
+    icon.addEventListener("click", function () {
+      const imgSrc = this.parentElement.querySelector("img").src;
+      modal.style.display = "block";
+      modalImage.src = imgSrc;
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+  </script> 
+</body>
+</html>
